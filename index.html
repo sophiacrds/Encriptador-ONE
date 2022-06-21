@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Codificador de textos</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div class="titleBackground"></div>
+            <h1 id="title">_encriptador e decriptador de texto</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="inputContainer">
+                <textarea name="input" id="input" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+                <div class="info">
+                    <img src="img/info.png" alt="Importante!">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="btn">
+                    <button class="btnDo" onclick="btnCrypt()">Criptografar</button>
+                    <button class="btnUndo" onclick="btnDecrypt()">Descriptografar</button>
+                </div>
+            </div>
+            <div class="outputContainer">
+                <img src="img/circle.gif" id="imgOutput" alt="">
+                <textarea name="output" id="output" cols="30" rows="10"></textarea>
+                <button class="btnCopy" onclick="btnCopy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyRight">
+            <p>&copy; Sophia Leão Cardoso, 2022.<br> All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
